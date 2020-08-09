@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    {{blog.content|safe}}
+    {% comment %} <h2 class="my-3">{{blog.title}}</h2> {% endcomment %}
+    {% comment %} <div class="row">
+       
+    </div> {% endcomment %}
+</div>
+
+
+{% endblock body %}

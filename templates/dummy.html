@@ -1,0 +1,43 @@
+<li>
+Despite having its own nomenclature, such as naming the callable objects generating the HTTP responses "views",[5] the core Django framework can be seen as an MVC architecture.[6] It consists of an object-relational mapper (ORM) that mediates between data models (defined as Python classes) and a relational database ("Model"), a system for processing HTTP requests with a web templating system ("View"), and a regular-expression-based URL dispatcher ("Controller").
+
+Also included in the core framework are:
+<p>
+a lightweight and standalone web server for development and testing</p>
+a form serialization and validation system that can translate between HTML forms and values suitable for storage in the database
+a template system that utilizes the concept of inheritance borrowed from object-oriented programming
+a caching framework that can use any of several cache methods
+support for middleware classes that can intervene at various stages of request processing and carry out custom functions
+an internal dispatcher system that allows components of an application to communicate events to each other via pre-defined signals
+an internationalization system, including translations of Django's own components into a variety of languages
+a serialization system that can produce and read XML and/or JSON representations of Django model instances
+a system for extending the capabilities of the template engine
+an interface to Python's built-in unit test framework
+Django REST framework is a powerful and flexible toolkit for building Web APIs.
+Bundled applications
+The main Django distribution also bundles a number of applications in its "contrib" package, including:
+
+an extensible authentication system
+the dynamic administrative interface
+tools for generating RSS and Atom syndication feeds
+a "Sites" framework that allows one Django installation to run multiple websites, each with their own content and applications
+tools for generating Google Sitemaps
+built-in mitigation for cross-site request forgery, cross-site scripting, SQL injection, password cracking and other typical web attacks, most of them turned on by default[18][19]
+a framework for creating GIS applications
+Extensibility
+Question book-new.svg
+This section relies too much on references to primary sources. Please improve this section by adding secondary or tertiary sources. (January 2015) (Learn how and when to remove this template message)
+Django's configuration system allows third party code to be plugged into a regular project, provided that it follows the reusable app[20] conventions. More than 2500 packages[21] are available to extend the framework's original behavior, providing solutions to issues the original tool didn't tackle: registration, search, API provision and consumption, CMS, etc.
+
+This extensibility is, however, mitigated by internal components' dependencies. While the Django philosophy implies loose coupling,[22] the template filters and tags assume one engine implementation, and both the auth and admin bundled applications require the use of the internal ORM. None of these filters or bundled apps are mandatory to run a Django project, but reusable apps tend to depend on them, encouraging developers to keep using the official stack in order to benefit fully from the apps ecosystem.
+
+Server arrangements
+Django can be run in conjunction with Apache, Nginx using WSGI, Gunicorn, or Cherokee using flup (a Python module).[23][24] Django also includes the ability to launch a FastCGI server, enabling use behind any web server which supports FastCGI, such as Lighttpd or Hiawatha. It is also possible to use other WSGI-compliant web servers.[25] Django officially supports four database backends: PostgreSQL, MySQL, SQLite, and Oracle. Microsoft SQL Server can be used with django-mssql on Microsoft operating systems,[26] while similarly external backends exist for IBM Db2,[27] SQL Anywhere[28] and Firebird.[29] There is a fork named django-nonrel, which supports NoSQL databases, such as MongoDB and Google App Engine's Datastore.[30]
+
+Django may also be run in conjunction with Jython on any Java EE application server such as GlassFish or JBoss. In this case django-jython must be installed in order to provide JDBC drivers for database connectivity, which also can provide functionality to compile Django in to a .war suitable for deployment.[31]
+
+Google App Engine includes support for Django version 1.x.x[32] as one of the bundled frameworks.
+
+Version history
+The Django team will occasionally designate certain releases to be “long-term support” (LTS) releases.[33] LTS releases will get security and data loss fixes applied for a guaranteed period of time, typically 3+ years, regardless of the pace of releases afterwards.
+</li>
